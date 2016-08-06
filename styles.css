@@ -1,0 +1,33 @@
+.container { width: 50%; margin: 10px auto;}
+.progress {
+  position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+}
+.control-containers 
+{
+	width: 25%;
+	float: left;
+	padding: 5px !important;
+}
+.addremove-control-containers 
+{
+	width: 33%;
+	float: left;
+	padding: 5px !important;
+}
+
+@media screen and (max-width: 479px)
+{
+
+	.container { width: 100%;}
+	.control-containers {width: 25%;}
+	.control-containers:first-of-type {width: 100%;}
+	.addremove-control-container { width: 50%;}
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progress Bars</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="styles.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	
+ 	<div id="containers-wrapper">
+ 	</div>
+
+	<div class="controls container" id="controls">
+		
+		<div class="addremove-control-containers">
+			<select name="progessbars" id="progressbars" class="form-control">
+			   		    
+			</select>	
+		</div>
+		
+		<div class="addremove-control-containers">
+			<input type="button" value="Add Bar" id="add" class="form-control btn btn-success">	
+		</div>	
+		<div class="addremove-control-containers">
+			<input type="button" value="Remove Bar" id="remove" class="form-control btn btn-success">	
+		</div>	
+		
+	</div>
+	
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+	<script src='js/ractive.js'></script>
+	<script id="template" type="text/ractive">
+
+		<div class="progress">
+		    <div class="progress-bar {{bgcolor}}" style="width:{{width}}%">
+		      <span>{{displayWidth}}</span>
+		    </div>
+	  	</div>
+	</script>
+	<script src="js/main.js"></script>	
+
+</body>
+</html>
